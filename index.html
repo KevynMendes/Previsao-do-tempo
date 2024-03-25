@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2">
+        <title>Previsão do tempo</title>
+        <link rel="icon" href="./src/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Previsão do Tempo</h1>
+
+    <div class="container">
+        <div class="slider">
+            <div class="slide">
+                <img src="./src/slide0.jpeg" alt="Image 1">
+                    <div class="caption">
+                        <h2>Uma onda de calor excepcional está afetando o Brasil.</h2>
+                            <p>Especialmente nas regiões Sudeste e Centro-Oeste. As altas temperaturas são consideradas altamente atípicas para esta época do ano e têm causado recordes de temperatura em várias cidades. A influência do El Niño e das mudanças climáticas globais contribuem para esse fenômeno. A população tem sido alertada para os cuidados necessários diante do calor intenso.</p>
+                                </div>
+                                    </div>
+        <div class="slide">
+            <img src="./src/slide1.jpeg" alt="Image 2">
+                <div class="caption">
+                    <h2>Uma intensa onda de calor está afetando cerca de 2.700 cidades.</h2>
+                        <p>Principalmente nas regiões Sudeste e Centro-Oeste, e deve persistir até sexta-feira. O Instituto Nacional de Meteorologia (Inmet), ligado ao Ministério da Agricultura e Pecuária, emitiu a previsão. A classificação do Inmet para ondas de calor ocorre quando a temperatura se mantém pelo menos 5ºC acima da média esperada por cinco dias consecutivos. Regiões como Rio de Janeiro, Cuiabá e diversas cidades do interior têm registrado temperaturas superiores a 40ºC nos últimos dias.</p>
+                            </div>
+                                </div>
+        <div class="slide">
+            <img src="./src/slide2.jpeg" alt="Image 3">
+                <div class="caption">
+                    <h2>A Organização Meteorológica Mundial emitiu um alerta vermelho sobre a crise climática.</h2>
+                        <p>2023 foi o ano mais quente em 174 anos, com previsão de 2024 seguir a tendência. Eventos climáticos extremos, como ondas de calor, inundações e incêndios, causaram danos significativos. A mudança climática exacerbou a insegurança alimentar e os deslocamentos populacionais. Apesar disso, o aumento das energias renováveis oferece esperança, mas são necessários investimentos para limitar o aquecimento global.</p>
+                            </div>
+                                </div>
+
+        <button class="prev" onclick="prevSlide()"><i class="bi bi-arrow-left-square-fill"></i></button>
+            <button class="next" onclick="nextSlide()"><i class="bi bi-arrow-right-square-fill"></i></button>
+                </div>
+
+    <div class="city-select">
+
+        <div class="city-option" data-city="brasilia">
+            <img src="src/brasilia.jpeg" alt="Brasília">
+                <span>Brasília-DF</span>
+                    </div>
+
+        <div class="city-option" data-city="rio-de-janeiro">
+            <img src="src/rio.jpeg" alt="Rio de Janeiro">
+                <span>Rio de Janeiro-RJ </span>
+                    </div>
+
+        <div class="city-option" data-city="salvador">
+            <img src="src/salvador.jpeg" alt="Salvador">
+                <span>Salvador-BA</span>
+                    </div>
+
+        <div class="city-option" data-city="sao-paulo">
+            <img src="src/saoPaulo.jpeg" alt="São Paulo">
+                <span>São Paulo-SP</span>
+                    </div>
+      
+        
+        <div class="city-option" data-city="vitoria">
+            <img src="src/vitoria.jpeg" alt="Vitória">
+                <span>Vitória-ES</span>
+                    </div>
+                        </div>
+
+    <div class="city-info" id="cityInfo"></div>
+
+    <div class="weather-info" id="weatherData"></div>
+            
+    <footer>Dados Fictícios.</footer>
+        
+    <script src="./script.js"></script>
+    </html>
